@@ -1,18 +1,18 @@
 # Install and Configure Docker via Ansible
 
-![alt text](https://raw.githubusercontent.com/kayvansol/AnsibleDockerInstallation/refs/heads/main/img/.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/AnsibleDockerInstallation/refs/heads/main/img/1.webp?raw=true)
 
-Docker is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers.[5] The service has both free and premium tiers. The software that hosts the containers is called Docker Engine.[6] It was first released in 2013 and is developed by Docker, Inc.
+`Docker` is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers.[5] The service has both free and premium tiers. The software that hosts the containers is called Docker Engine.[6] It was first released in 2013 and is developed by Docker, Inc.
 
 Docker is a tool that is used to automate the deployment of applications in lightweight containers so that applications can work efficiently in different environments in isolation.
 
 Ansible is a suite of software tools that enables infrastructure as code. It is open-source and the suite includes software provisioning, configuration management, and application deployment functionality.
 
-we have 3 machine, one for ansible management and 2 for hosts to install docker on them :
+We have 3 machine, one for ansible management and 2 for hosts to install docker on them :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/AnsibleDockerInstallation/refs/heads/main/img/1.png?raw=true)
 
-At first we must install ansible on the DesktopTest :
+At first we must install ansible on the DesktopTest (ansible management) :
 ```
 sudo apt-add-repository ppa:ansible/ansible
 
@@ -45,7 +45,7 @@ The ansible.cfg file defines key configuration settings for running Ansible play
 # Playbooks :
 Playbooks are used to execute multiple roles and tasks across targeted servers.
 
-‍‍docker.ymlThis is a Docker playbook that allows us to invoke the Docker role
+‍‍docker.yml This is a Docker playbook that allows us to invoke the Docker role
 
 # Roles:
 Each role in this project is modular, focused on a specific area of system security, and designed to be reusable.
@@ -74,7 +74,6 @@ ansible all -m ping
 
 check 2 machines that does not have docker installed on them :
 
-
 ![alt text](https://raw.githubusercontent.com/kayvansol/AnsibleDockerInstallation/refs/heads/main/img/3.png?raw=true)
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/AnsibleDockerInstallation/refs/heads/main/img/4.png?raw=true)
@@ -82,7 +81,9 @@ check 2 machines that does not have docker installed on them :
 then run the playbook :
 ```
 ansible-playbook -i inventory/RahBia.yml playbooks/docker.yml
+
 or
+
 ansible-playbook playbooks/docker.yml
 ```
 
@@ -92,7 +93,7 @@ htop on one of 2 machine :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/AnsibleDockerInstallation/refs/heads/main/img/6.png?raw=true)
 
-if any error happens, check and correct it and run the playbook again
+if any error happens, check and correct it and run the playbook again.
 
 Note : ansible process is idempotent, an idempotent operation is one that has no additional effect if it is called more than once with the same input parameters.
 
@@ -106,6 +107,6 @@ and now check 2 machines that have docker.
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/AnsibleDockerInstallation/refs/heads/main/img/9.png?raw=true)
 
-Congratulation 
+Congratulation 🍹
 
 
