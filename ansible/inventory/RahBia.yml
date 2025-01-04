@@ -1,0 +1,10 @@
+all:
+  vars:
+    ansible_user: root
+    ansible_port: 22 #8090
+  hosts:
+    server01:
+      ansible_host: 192.168.56.157
+    server02:
+      ansible_host: 192.168.56.158
+    
