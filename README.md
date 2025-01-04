@@ -6,7 +6,11 @@
 
 Docker is a tool that is used to automate the deployment of applications in lightweight containers so that applications can work efficiently in different environments in isolation.
 
-Ansible is a suite of software tools that enables infrastructure as code. It is open-source and the suite includes software provisioning, configuration management, and application deployment functionality.
+`Ansible` is a suite of software tools that enables infrastructure as code. It is open-source and the suite includes software provisioning, configuration management, and application deployment functionality.
+
+Ansible is an open source IT automation engine that automates provisioning, configuration management, application deployment, orchestration, and many other IT processes. It is free to use, and the project benefits from the experience and intelligence of its thousands of contributors.
+
+# Senario :
 
 We have 3 machine, one for ansible management and 2 for hosts to install docker on them :
 
@@ -107,6 +111,6 @@ and now check 2 machines that have docker.
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/AnsibleDockerInstallation/refs/heads/main/img/9.png?raw=true)
 
-Congratulation 🍹
+Congratulation. 🍹
 
 
