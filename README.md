@@ -40,6 +40,8 @@ then check the ansible project and files at management node :
 # Requirements File requirements.txt
 The requirements.txt file is used in Python projects to list all the dependencies (external libraries or packages) that are required to run your application or project. This file allows users to easily install the necessary dependencies using pip, the Python package installer.
 ```
+cd ansible
+
 pip install -r requirements.txt
 ```
 
