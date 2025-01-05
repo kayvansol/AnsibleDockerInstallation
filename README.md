@@ -27,7 +27,7 @@ sudo apt install ansible
 ansible --version
 ```
 
-Note : python must be installed at any linux and consider that we have one linux for source (ansible management node) where the ansible is installed on it and one or many linux for destination that must be harden by ansible.
+Note : python must be installed at any linux and consider that we have one linux for source (ansible management node) where the ansible is installed on it and one or many linux for destination that must be install docker by ansible.
 
 Important : management node must can ssh to any destination node passwordlesslly.
 
